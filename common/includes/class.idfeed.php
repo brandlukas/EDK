@@ -735,6 +735,18 @@ class IDFeed
 		} else {
 			$alliance = Alliance::add("None");
 		}
+		// get alliance from corp if ship is any kind of tower
+		$shipClassID = $ship->getClass()->getID();
+		if($shipClassID == 35           // small Tower
+			|| $shipClassID == 36   // medium Tower
+			|| $shipClassID == 37)  // large Tower
+		{
+			$corpByName = Corporation::lookup(strval($inv['corporationName']));
+			if($corpByName)
+			{
+				$alliance = $corpByName->getAlliance();
+			}
+		}
 		$corp = Corporation::add(strval($inv['corporationName']), $alliance, $time,
 					(int)$inv['corporationID']);
 
@@ -797,26 +809,11 @@ class IDFeed
 			// Implant
 			$location = 8;
 		} else if ((int)$item['flag'] == 87) {
-         // Drone Bay
-         $location = 6;
-      } else if ((int)$item['flag'] == 90) {
-         // SMA
-         $location = 11;
-      } else if (($this->url == '' && (int)$item['flag'] == 0) || (int)$item['flag'] == 4 || (int)$item['flag'] == 116 ||
-               (int)$item['flag'] == 117 || (int)$item['flag'] == 118 || (int)$item['flag'] == 119 || (int)$item['flag'] == 155 ||
-               (int)$item['flag'] == 120 || (int)$item['flag'] == 121) {
-         // Corp Hangar
-      // Right now flag = 0, but it should be 4 or 116-121
-         $location = 10;
-      } else if ((int)$item['flag'] == 133) {
-         // Fuel bay
-         $location = 12;
-      } else if ((int)$item['flag'] == 134) {
-         // Ore bay
-         $location = 13;
-      } else if ($slot != null) {
-         $location = $slot;
-      } else {
+			// Drone Bay
+			$location = 6;
+		} else if ($slot != null) {
+			$location = $slot;
+		} else {
 			$litem = new Item((int)$item['typeID']);
 			$location = $litem->getSlot();
 		}
@@ -1082,32 +1079,20 @@ class IDFeed
 					$itemRow = $items->addChild('row');
 					$itemRow->addAttribute('typeID', $iRow['itd_itm_id']);
 					if ($iRow['itd_itl_id'] == 9) {
-                  // BPC in cargo
-                  $itemRow->addAttribute('flag', 5);
-               } else if ($iRow['itd_itl_id'] == 4) {
-                  // cargo
-                  $itemRow->addAttribute('flag', 5);
-               } else if ($iRow['itd_itl_id'] == 6) {
-                  // drone
-                  $itemRow->addAttribute('flag', 87);
-               } else if ($iRow['itd_itl_id'] == 8) {
-                  // implant
-                  $itemRow->addAttribute('flag', 89);
-               } else if ($iRow['itd_itl_id'] == 10) {
-                  // corp hangar. We don't track which tab, so say it is tab 0
-                  $itemRow->addAttribute('flag', 4);
-               } else if ($iRow['itd_itl_id'] == 11) {
-                  // SMA
-                  $itemRow->addAttribute('flag', 90);
-               } else if ($iRow['itd_itl_id'] == 12) {
-                  // fuel bay
-                  $itemRow->addAttribute('flag', 133);
-               } else if ($iRow['itd_itl_id'] == 13) {
-                  // ore bay
-                  $itemRow->addAttribute('flag', 134);
-               } else {
-                  $itemRow->addAttribute('flag', 0);
-               }
+						// BPC in cargo
+						$itemRow->addAttribute('flag', 5);
+					} else if ($iRow['itd_itl_id'] == 4) {
+						// cargo
+						$itemRow->addAttribute('flag', 5);
+					} else if ($iRow['itd_itl_id'] == 6) {
+						// drone
+						$itemRow->addAttribute('flag', 87);
+					} else if ($iRow['itd_itl_id'] == 8) {
+						// implant
+						$itemRow->addAttribute('flag', 89);
+					} else {
+						$itemRow->addAttribute('flag', 0);
+					}
 
 					if ($iRow['itd_itl_id'] == 9) {
 						$itemRow->addAttribute('singleton', 2);
@@ -1124,29 +1109,17 @@ class IDFeed
 					$itemRow = $items->addChild('row');
 					$itemRow->addAttribute('typeID', $iRow['itd_itm_id']);
 					if ($iRow['itd_itl_id'] == 9) {
-                  // BPC in cargo
-                  $itemRow->addAttribute('flag', 5);
-               } else if ($iRow['itd_itl_id'] == 4) {
-                  // cargo
-                  $itemRow->addAttribute('flag', 5);
-               } else if ($iRow['itd_itl_id'] == 6) {
-                  // drone
-                  $itemRow->addAttribute('flag', 87);
-               } else if ($iRow['itd_itl_id'] == 10) {
-                  // corp hangar. We don't track which tab, so say it is tab 0
-                  $itemRow->addAttribute('flag', 4);
-               } else if ($iRow['itd_itl_id'] == 11) {
-                  // SMA
-                  $itemRow->addAttribute('flag', 90);
-               } else if ($iRow['itd_itl_id'] == 12) {
-                  // fuel bay
-                  $itemRow->addAttribute('flag', 133);
-               } else if ($iRow['itd_itl_id'] == 13) {
-                  // ore bay
-                  $itemRow->addAttribute('flag', 134);
-               } else {
-                  $itemRow->addAttribute('flag', 0);
-               }
+						// BPC in cargo
+						$itemRow->addAttribute('flag', 5);
+					} else if ($iRow['itd_itl_id'] == 4) {
+						// cargo
+						$itemRow->addAttribute('flag', 5);
+					} else if ($iRow['itd_itl_id'] == 6) {
+						// drone
+						$itemRow->addAttribute('flag', 87);
+					} else {
+						$itemRow->addAttribute('flag', 0);
+					}
 
 					if ($iRow['itd_itl_id'] == 9) {
 						$itemRow->addAttribute('singleton', 2);

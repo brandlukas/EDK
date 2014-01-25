@@ -34,6 +34,16 @@ class Parser
 	function Parser($killmail, $externalID = null, $loadExternals = true)
 	{
 		self::$loadExternals = $loadExternals;
+		// -------------------------------------
+		// fix for new localization in killmails
+		// -------------------------------------
+
+		// remove possible escaping of double quotation marks
+		$killmail = preg_replace("/\\\\\"/", "\"", $killmail);
+		// remove <localized> shit and extract the hint if any
+		$killmail = preg_replace_callback("/\<localized hint=\"(.*)\"\>(.*)(\*)?(\<\/localized\>)?\\r/", create_function('$match', 'return $match[1];'), $killmail);
+		// remove trailing * if any
+		$killmail = preg_replace("/(\*)?\\r/", "", $killmail);
 
 		$this->killmail_ = trim(str_replace("\r", '', $killmail));
 
@@ -461,10 +471,14 @@ class Parser
 								$crp = $this->fetchCorp($corporation);
 								if($crp && $crp->getExternalID(true) > 0)
 								{
-									if(strtotime($timestamp) > time() - 24*60*60 && $crp->fetchCorp())
+									if($crp->fetchCorp())
 									{
 										$al = $crp->getAlliance();
-										$ianame = $al->getName();
+										$alName = $al->getName();
+										if(trim($alName) != "")
+										{
+											$ianame = $al->getName();
+										}
 									}
 									// else check db for kills with that corp at the same time?
 								}
@@ -934,6 +948,9 @@ class Parser
 					$corp = Corporation::add($corpname, Alliance::add("None"), $timestamp);
 					if (!$corp->getExternalID()) {
 						$corp = false;
+					}
+					else {
+						$corp->execQuery();
 					}
 				}
 			} else {

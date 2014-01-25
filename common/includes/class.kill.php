@@ -55,7 +55,7 @@ class Kill extends Cacheable
 	{
 		$id = intval($id);
 		if($id && $external) {
-			$qry = DBFactory::getDBQuery();
+			$qry = DBFactory::getDBQuery(true);
 			$qry->execute("SELECT kll_id FROM kb3_kills WHERE kll_external_id = ".$id);
 			if($qry->recordCount()) {
 				$result = $qry->getRow();
@@ -678,14 +678,6 @@ class Kill extends Cacheable
 					$mail .= " (Implant)";
 				} else if ($destroyed->getLocationID() == 9) {
 					$mail .= " (Copy)";
-				} else if ($destroyed->getLocationID() == 10) {
-				   $mail .= " (Corporate Hangar)";
-				} else if ($destroyed->getLocationID() == 11) {
-				   $mail .= " (Ship Hangar)";
-				} else if ($destroyed->getLocationID() == 12) {
-				   $mail .= " (Specialized Fuel Bay)";
-				} else if ($destroyed->getLocationID() == 13) {
-				   $mail .= " (Specialized Ore Bay)";
 				}
 				$mail .= "\r\n";
 			}
@@ -709,14 +701,6 @@ class Kill extends Cacheable
 					$mail .= " (Implant)";
 				} else if ($dropped->getLocationID() == 9) {
 					$mail .= " (Copy) (Cargo)";
-				} else if ($dropped->getLocationID() == 10) {
-				   $mail .= " (Corporate Hangar)";
-				} else if ($dropped->getLocationID() == 11) {
-				   $mail .= " (Ship Hangar)";
-				} else if ($dropped->getLocationID() == 12) {
-				   $mail .= " (Specialized Fuel Bay)";
-				} else if ($dropped->getLocationID() == 12) {
-				   $mail .= " (Specialized Ore Bay)";
 				}
 				$mail .= "\r\n";
 			}
@@ -1777,9 +1761,5 @@ class Kill extends Cacheable
 	static function getByID($id)
 	{
 		return Cacheable::factory(get_class(), $id);
-	}
-	
-	public function getDmgTaken(){
-		return $this->dmgtaken;
 	}
 }
