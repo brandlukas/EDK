@@ -1,0 +1,44 @@
+2012/04/01
+* release of version 0.2
+* added possibility for admins to manuall asside sides for involved parties of a battle
+* style-upgrade for Balance Of Power table
+* added Damage Overview tab (credits to protoburger, thx!)
+* fixed several minor bugs
+* changed default sliding time from 12h to 4h
+* fixed a bug in the way fleet battles are determined, please rebuild your fleet battle cache
+
+
+2012/03/23
+* release of version 0.1.3
+* complete code refactoring on the base of kill_related.php in EDK 4.0.4
+* added kill lists tab
+* added enabling/disabling of timeline, loss value lists, kill lists and loot overview to the settings
+* some layout optimizations
+* performance optimizations
+* ship filters now apply correctly
+* tabs now initialize immediately instead of waiting for images to load
+* changed time line algorithm so that pod kills will always appear after the ship kill in the timeline
+* AJAX-driven tab loading
+
+Removed File: js/toggle.js
+
+2012/03/13
+* release of version 0.1.2
+* includes now a cronjob for automatic updating the fleet battles cache
+* fixed minor bugs
+
+2012/03/11
+* release of version 0.1.1
+* destroyed indicator (red background) is now defined by the class .br-destroyed (defined in css/style.css)
+* added "include adjacent" functionality (not (yet) available for fleet battle displaying, only for related kills atm)
+* fixed displaying of pod images in battle overview
+
+2012/03/11
+* added support for simple urls
+* fixed a wrong linkage in Battle Overview
+
+2012/03/10
+* fixed bug preventing map images in battle overview from displaying
+
+2012/03/10
+* initial version

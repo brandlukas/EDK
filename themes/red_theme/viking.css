@@ -1,0 +1,378 @@
+html, body {
+    background: url("img/viking/body-bg.png") repeat scroll 0 0 transparent;
+    color: #444444;
+	font-weight: bold;
+    font: 12px "Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+font, th, td, p, a, div {
+	
+
+}
+
+a:link, a:visited, a:active {
+	color: #6B5C51;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+#main a:link, #main a:visited, #main a:active {
+	color: #444444;
+}
+
+a:hover {
+	color: #0474B4;
+}
+
+div.infoheader {
+    background: url("img/viking/top-bg.png") repeat-x scroll 0 0 transparent;
+    color: #888888;
+    font: 11px "Trebuchet MS","Arial","Helvetica",sans-serif;
+    height: 118px;
+    margin: 0;
+    padding: 0;
+}
+
+.infoheader .banner {
+    background: url("img/viking/logo_new.png") no-repeat scroll 0 6px transparent;
+    height: 109px;
+    margin: auto;
+    width: 990px;
+}
+
+.infoheader .text {
+    display: none;
+    margin: auto;
+    padding-top: 15px;
+    width: 170px;
+}
+
+div.navigation {
+    background: url("img/viking/toolbar-bg.png") repeat scroll 0 0 transparent !important;
+    display: block;
+    height: 61px;
+    margin-top: -16px;
+}
+
+div.navigation .navigation_in {
+	margin: auto;
+	width: 1000px;
+}
+
+div.navigation ul {
+	list-style: none;
+}
+
+div.navigation li {
+    float: left;
+    height: 30px;
+}
+
+div.navigation li a {
+	color: #DDDDDD;
+    font-family: Arial Narrow,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold !important;
+    padding: 20px 23px 13px;
+    text-decoration: none !important;
+}
+
+div.navigation li a:hover {
+	color: white;
+}
+
+#wrapper {
+	width: 990px;
+	margin:auto;
+}
+
+#main_top_left {
+    background: url("img/viking/userbar-shad-l.png") no-repeat scroll 0 -100px transparent;
+    height: 30px;
+    padding-left: 24px;
+}
+
+#main_top_right {
+    background: url("img/viking/userbar-shad-r.png") no-repeat scroll 100% -100px transparent;
+    height: 30px;
+    padding-right: 24px;
+}
+
+#main_top {
+    background: url("img/viking/userbar-main-bg.png") repeat-x scroll 0 -100px transparent;
+    height: 30px;
+}
+
+#main_left {
+    background: url("img/viking/body-shad-r.png") repeat-y scroll 100% 0 transparent;
+    padding-right: 18px;
+}
+
+#main_right {
+    background: url("img/viking/body-shad-l.png") repeat-y scroll 0 0 transparent;
+    padding-left: 18px;
+}
+
+#main {
+    border: medium none;
+	color: #444444 !important;
+    margin: auto;
+    padding: 20px 0 0;
+}
+
+#main, #content, div.navigation {
+	background: #FFFFFF;
+}
+
+#main #header {
+	display: none;
+}
+
+#footer {
+    background: url("img/viking/footer-bg.png") repeat-x scroll 0 0 #242424;
+    color: #AAAAAA;
+}
+
+#footer_left {
+    background: url("img/viking/footer-l.png") no-repeat scroll 0 0 transparent;
+    height: 128px;
+    padding-left: 20px;
+}
+
+#footer_right {
+    background: url("img/viking/footer-r.png") no-repeat scroll 100% 0 transparent;
+    height: 128px;
+    padding-right: 20px;
+}
+
+#footer_float_left {
+    float: left;
+    padding: 25px 15px 0;
+    text-align: right;
+}
+
+#footer_float_right {
+    float: right;
+    padding: 25px 15px 0;
+    text-align: right;
+}
+
+#footer_float_right_icon {
+    background: url("img/viking/ds_logo.png") no-repeat scroll 100% 0 transparent;
+    display: block;
+    float: right;
+    height: 32px;
+    margin-top: 5px;
+    width: 48px;
+}
+
+/* SUMMARYTABLE */
+
+.alliance-detail .logo, .corp-detail .logo, .pilot-detail .logo {
+	background-color: #222222;
+}
+
+.kb-table-header {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #0474B4;
+    font-size: 10px;
+    font-weight: bold;
+    height: 15px;
+    padding: 4px;
+}
+
+#page-title, .kb-date-header {
+	color: #444444 !important;
+}
+
+.kb-table-rows > tbody > tr:nth-child(2n+1), .kb-table-row-even{
+    background: none repeat scroll 0 0 #FAFAFA;
+	color: #444444;
+}
+
+.kb-table-rows > tbody > tr:nth-child(2n), .kb-table-row-odd {
+    background: none repeat scroll 0 0 #FFFFFF;
+	color: #444444;
+}
+
+.kb-kl-table a:link, .kb-kl-table a:visited {
+	color: #444444;
+}
+
+a.kb-shipclass:link {
+    color: #444444;
+}
+
+#content, .summarytable > table, .kb-kl-table {
+	width: 765px;
+}
+
+#content .summarytable td.kl-kill, #content .killcount, td.kl-kill {
+	color: #009900;
+	text-shadow: 1px 1px 1px #DDDDDD;
+}
+
+#content .summarytable td.kl-loss, #content .losscount, td.kl-loss {
+    color: #CC0000;
+    text-shadow: 1px 1px 1px #DDDDDD;
+}
+
+.summarytable .table-container {
+	padding: 0;
+}
+
+.kb-table {
+	border: none;
+}
+
+/* ROWS */
+
+td.kb-table-imgcell > img {
+    margin-bottom: -2px;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(2n+1) {
+    background: none repeat scroll 0 0 #99D983;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(2n) {
+    background: none repeat scroll 0 0 #ADE19C;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(2n+1) {
+    background: none repeat scroll 0 0 #D98383;
+}
+
+.kb-table-rows > tbody > tr.kb-table-row-loss:nth-child(2n) {
+    background: none repeat scroll 0 0 #E19C9C;
+}
+/* HIGHLIGHTING */
+.kb-table-row-hover, .contractlist tr:hover,
+.kb-table-rows > tbody > tr:hover,
+.kb-kl-table tbody .kb-table-row-even:hover,
+.kb-kl-table .kb-table-row-odd:hover {
+    background: none repeat scroll 0 0 #4F9ECA !important;//#4C3C30;
+//	color: white;
+//	color: #E0E0E0;
+}
+
+tr.kb-table-row-kill:hover td div a,
+tr.kb-table-row-kill:hover td div.kl-shiptype-text,
+tr.kb-table-row-kill:hover td div.kl-location,
+tr.kb-table-row-kill:hover td div.kl-inv-comm,
+tr.kb-table-row-loss:hover td div a,
+tr.kb-table-row-loss:hover td div.kl-shiptype-text,
+tr.kb-table-row-loss:hover td div.kl-location,
+tr.kb-table-row-loss:hover td div.kl-inv-comm {
+    color: #444444 !important;
+}
+
+/* AWARDBOX */
+.awardbox-count {
+	font-weight: bold;
+    color: #0474B4;
+}
+
+.awardbox-comment, .awardbox-num {
+    color: #444444;
+}
+
+div.bar {
+    background: none repeat scroll 0 0 #0474B4;
+    border-bottom: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+/* NATIVE SUPPORT FOR CYNO/CLOAK MOD */
+td.kl-cyno-cloak-mod {
+	display: block;
+	margin-top:2px;
+	position: relative;
+}
+
+td.kl-cyno-cloak-mod.cyno, td.kl-cyno-cloak-mod.cloak {
+	width: 25px;
+}
+
+td.kl-cyno-cloak-mod.cloak.cyno {
+	width: 50px !important;
+}
+
+td.kl-cyno-cloak-mod img {
+    float: left;
+    height: 24px;
+    opacity: 0.3;
+	filter: Alpha(opacity=30);
+}
+
+td.kl-cyno-cloak-mod img.fitted {
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+}
+
+/* KILL DETAIL PAGE */
+
+#kl-detail-right .fitting-panel {
+	margin: auto;
+}
+
+.kl-detail-shipdetails tr.summary.bpo,
+.kl-detail-shipdetails tr.summary.itemdrop,
+.kl-detail-shipdetails tr.dropped {
+	background-color: #99d983 !important;
+}
+
+.kl-detail-shipdetails .kb-table-row-odd {
+    background: none repeat scroll 0 0 #D98383;
+}
+
+.kl-detail-shipdetails tr.totalloss {
+    background-color: #D98383;
+}
+
+.kl-detail-shipdetails td.item-icon, th.item-icon {
+    border: 1px solid #DDDDDD;
+    height: 32px;
+    width: 32px;
+}
+
+/* BATTLE SUMMARY PAGE */
+
+.kb-kills-header, .kb-losses-header {
+	color: #444444;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1) {
+    background-color: #f8dbdb !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n) {
+    background-color: #ecc1c1 !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1):hover,
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n):hover {
+	background-color: #d2b1b1 /*B02323*/ !important;
+}
+
+.kb-table-rows tr.destroyed td.kb-table-imgcell img {
+    margin-bottom: -2px;
+}
+
+/* SEARCH */
+#search .kb-subtable, #content .block-header  {
+    color: #444444;
+}
+
+/* ADMIN PANEL */
+#options .kb-subtable,
+#options .block-header2,
+#update .kb-subtable,
+#update .block-header2 {
+	color: #444444;
+}
+
+/* MOST EXPENSIVE MOD */
+.mostexplink, .kb-mostexpensive-header {
+	color: #444444 !important;
+}

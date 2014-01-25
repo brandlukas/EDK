@@ -1,0 +1,304 @@
+html, body {
+    background: url("img/brown_bg.jpg") repeat scroll 0 0 transparent;
+    color: #CCCCCC;
+    font-family: "Trebuchet MS","Arial","Helvetica",sans-serif;
+}
+
+font, th, td, p, a, div {
+	text-shadow: 1px 1px 1px black;
+}
+
+a:link, a:hover, a:visited, a:active {
+	color: #6B5C51;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: #8B7C71;
+}
+
+#header {
+	display: none;
+    background: url("img/forumbann.png") no-repeat scroll 0 0 transparent;
+    height: 115px;
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+#header a {
+    display: block;
+    float: left;
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-indent: -9999px;
+    width: 230px;
+}
+
+div.infoheader {
+	display: none;
+    background: url("img/userbar.png") repeat-x scroll 0 -3px transparent;
+    color: #888888;
+    font: 11px "Trebuchet MS","Arial","Helvetica",sans-serif;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: lowercase;
+}
+.infoheader_in {
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+.infoheader .text {
+    display: none;
+    margin: auto;
+    padding-top: 15px;
+    width: 170px;
+}
+
+div.navigation {
+	-moz-box-shadow: 0 4px 2px -4px black inset, 0 -4px 2px -4px black inset;
+	-webkit-box-shadow: 0 4px 2px -4px black inset, 0 -4px 2px -4px black inset;
+	box-shadow: 0 4px 2px -4px black inset, 0 -4px 2px -4px black inset;
+    display: block;
+    height: 30px;
+    margin-top: -16px;
+}
+
+div.navigation .navigation_in {
+	margin: auto;
+	width: 1000px;
+}
+
+div.navigation ul {
+	list-style: none;
+}
+
+div.navigation li {
+    float: left;
+    height: 30px;
+}
+
+div.navigation li a {
+    color: #787878;
+	font: 13px/30px "Trebuchet MS","Arial","Helvetica",sans-serif;
+	font-weight: normal;
+    line-height: 30px;
+	text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+div.navigation li a:hover {
+	color: white;
+}
+
+#main #header {
+	display: none;
+}
+
+#main {
+    -moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+    border: none;
+    margin: 50px auto;
+    padding: 20px 0 0;
+	/* EXTEND THE THEME TO 1000px */
+	width: 1000px;
+}
+
+#footer, #footer a {
+    color: #BCBCBC;
+    font: 13px/150% "Trebuchet MS","Arial","Helvetica",sans-serif;
+}
+
+#footer {
+    background: none repeat scroll 0 0 #262626;
+    border-bottom: 3px solid #212121;
+    border-top: 3px solid #212121;
+    color: #787878;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+#footer_in {
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+#footer_in a:link, #footer_in a:visited,
+#footer_in a:active {
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#footer_in a:hover {
+	color: white;
+}
+
+#profile {
+    color: #E0E0E0;
+    font-size: 10px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#main, #content, div.navigation {
+	background: #252525;
+}
+
+#content, .summarytable > table, .kb-kl-table {
+/* EXTEND THE TABLES TO FIT THE NEW WIDTH */
+	width: 815px;
+}
+
+#content .summarytable td.kl-kill, #content .killcount{
+	color: #A57243;
+}
+
+#content .summarytable td.kl-loss, #content .losscount {
+	color: #8B403A;
+}
+
+.summarytable .table-container {
+	padding: 0;
+}
+
+.kb-table {
+	border: none;
+}
+
+.kltable .kb-table .kl-shiptype-text {
+    width: 160px;
+}
+
+.kltable .kb-table .kl-victim-text {
+    width: 210px;
+}
+
+.kltable .kb-table .kl-finalblow {
+    width: 150px;
+}
+
+.kltable .kb-table .kl-location {
+    width: 150px;
+}
+
+/* ROWS */
+.kb-table-row-even, .kb-table-row-destroyed {
+    background: none repeat scroll 0 0 #282828;
+}
+
+.kb-table-row-odd, .kb-table-row-slot {
+    background: none repeat scroll 0 0 #323232;
+}
+
+td.kb-table-imgcell > img {
+    margin-bottom: -2px;
+}
+
+/* HIGHLIGHTING */
+.kb-table-row-hover, .contractlist tr:hover,
+.kb-table-rows > tbody > tr:hover,
+.kb-kl-table tbody .kb-table-row-even:hover,
+.kb-kl-table .kb-table-row-odd:hover {
+    background: none repeat scroll 0 0 #B02323;//#4C3C30;
+	color: white;
+//	color: #E0E0E0;
+}
+
+/* AWARDBOX BARS */
+div.bar {
+    background: none repeat scroll 0 0 #A57243;
+    border-bottom: 1px solid #A57243;
+    border-right: 1px solid #A57243;
+}
+
+div.bar-background {
+    background-color: #141414;
+}
+
+/* NATIVE SUPPORT FOR CYNO/CLOAK MOD */
+td.kl-cyno-cloak-mod {
+	display: block;
+	margin-top:2px;
+	position: relative;
+}
+
+td.kl-cyno-cloak-mod.cyno, td.kl-cyno-cloak-mod.cloak {
+	width: 25px;
+}
+
+td.kl-cyno-cloak-mod.cloak.cyno {
+	width: 50px !important;
+}
+
+td.kl-cyno-cloak-mod img {
+    float: left;
+    height: 24px;
+    opacity: 0.3;
+	filter: Alpha(opacity=30);
+}
+
+td.kl-cyno-cloak-mod img.fitted {
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+}
+
+/* KILL DETAIL PAGE */
+
+#kl-detail-left {
+    margin: 0 10px 10px 0;
+    width: 368px;
+}
+
+#kl-detail-right {
+    width: 430px;
+}
+
+#kl-detail-right .fitting-panel {
+	margin: auto;
+}
+
+/* BATTLE SUMMARY PAGE */
+.kill-related-friendly, .kill-related-hostile {
+    width: 404px;
+}
+
+.kill-related-friendly > table.kb-table,
+.kill-related-hostile > table.kb-table {
+    width: 404px;
+}
+
+.kill-related-friendly tr.kb-table-header > td:last-child,
+.kill-related-hostile tr.kb-table-header > td:last-child {
+    width: 170px;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1) {
+    background-color: #381A17 !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n) {
+    background-color: #532623 !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1):hover,
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n):hover {
+	background-color: #B02323 !important;
+}
+
+.kb-table-rows tr.destroyed td.kb-table-imgcell img {
+    margin-bottom: -2px;
+}

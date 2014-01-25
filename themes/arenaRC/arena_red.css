@@ -1,0 +1,439 @@
+html, body {
+    /*background: url("img/background.png") no-repeat scroll 0 0 black;*/
+    color: #CCCCCC;
+    font-family: "Trebuchet MS","Arial","Helvetica",sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+a:link, a:hover, a:visited, a:active {
+	color: #912f29;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+
+a:hover {
+	color: #c73c48;
+}
+
+#header {
+    background: url("img/banner.png") no-repeat scroll 50% 30px transparent;
+    height: 230px;
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+#header a {
+    display: block;
+    float: left;
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-indent: -9999px;
+    width: 230px;
+}
+
+#content {
+	width: 815px;
+}
+
+div.light-bg {
+    background: none repeat scroll 0 0 rgba(150, 150, 150, 0.1);
+    display: block;
+    margin: auto;
+	padding-bottom: 10px;
+    width: 1040px;
+}
+
+div.main-bg {
+    background: none repeat scroll 0 0 rgba(10, 10, 0, 0.5);
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 1020px;
+}
+
+div.infoheader {
+	display:none;
+    background: url("img/userbar.png") repeat-x scroll 0 -3px transparent;
+    color: #888888;
+    font: 11px "Trebuchet MS","Arial","Helvetica",sans-serif;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: lowercase;
+}
+.infoheader_in {
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+.infoheader .text {
+    display: none;
+    margin: auto;
+    padding-top: 15px;
+    width: 170px;
+}
+
+div.navigation {
+    background: none repeat scroll 0 0 rgba(150, 150, 150, 0.2);
+    display: block;
+    height: 30px;
+    margin: auto auto 30px;
+    position: relative;
+    top: 10px;
+    width: 1020px;
+}
+
+div.navigation .navigation_in {
+	margin: auto;
+	width: 1000px;
+}
+
+div.navigation ul {
+	list-style: none;
+}
+
+div.navigation li {
+    float: left;
+    height: 30px;
+}
+
+div.navigation li:hover {
+	background: rgba(150, 150, 150, 0.2);
+}
+
+div.navigation li a {
+    color: white;
+    font-family: "Trebuchet MS","Arial","Helvetica",sans-serif;
+    font-size: 13px;
+    font-weight: bold !important;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+div.navigation li a:hover {
+	color: white;
+}
+
+#skull {
+	display: block;
+	position: fixed;
+	margin-left:10px;
+	margin-top:35px;
+	width:100px;
+}
+
+#skull .image {
+	display:block;
+	opacity: 0.3;
+	float: left;
+	position: relative;
+}
+
+#skull #lefteye,
+#skull #righteye {
+	float: left;
+    height: 50px;
+    width: 50%;
+	position:absolute;
+	opacity:0;
+	top:27%;
+}
+
+#skull #lefteye {
+	background: url("img/lefteye_hover.png") no-repeat scroll 9px 0 transparent;
+}
+
+#skull #righteye {
+	background: url("img/righteye_hover.png") no-repeat scroll 8px 0 transparent;
+	right: 0;
+}
+#skull .links {
+    display: block;
+    float: left;
+    position: relative;
+    width: 150px;
+}
+
+#skull a:link, #skull a:hover, #skull a:visited, #skull a:active {
+	color: #bbbbbb;
+	font-size:14px;
+	font-weight:normal;
+}
+
+#skull a:hover {
+	color: #ffffff;
+}
+
+#skull ul {
+	display: none;
+	list-style: none;
+}
+
+#main #header {
+	display: none;
+}
+
+#main {
+    border: medium none;
+    margin: auto;
+    padding: 20px 0 0;
+    width: 1000px;
+}
+
+#footer, #footer a {
+    color: #BCBCBC;
+    font: 13px/150% "Trebuchet MS","Arial","Helvetica",sans-serif;
+}
+
+#footer {
+    background: url("img/black_0_60_32.png") repeat scroll 0 0 transparent;
+    color: #787878;
+    padding: 20px 0;
+}
+
+#footer_in {
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+#footer_in a:link, #footer_in a:visited,
+#footer_in a:active {
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#footer_in a:hover {
+	color: white;
+}
+
+#profile {
+    color: #E0E0E0;
+    font-size: 10px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#main {
+    background: none repeat scroll 0 0 rgba(180, 120, 120, 0.3);
+}
+
+#content {
+	background: transparent;
+}
+
+.kb-mostexpensive-header {
+    background-image: url("/mods/mostexp/img/mostexp.png");
+    background-position: 0 -3px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #777777;
+    color: #CCCCCC;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+/*
+#content, .summarytable > table, .kb-kl-table {
+	width: 815px;
+}
+
+#content .summarytable td.kl-kill, #content .killcount, td.kl-kill {
+	color: #A57243;
+}
+
+#content .summarytable td.kl-loss, #content .losscount {
+	color: #8B403A;
+}
+
+.summarytable .table-container {
+	padding: 0;
+}
+*/
+
+.summarytable {
+	display: none;
+}
+
+.kb-table {
+	border: none;
+}
+
+.kltable .kb-table .kl-shiptype-text {
+    width: 160px;
+}
+
+.kltable .kb-table .kl-victim-text {
+    width: 210px;
+}
+
+.kltable .kb-table .kl-finalblow {
+    width: 150px;
+}
+
+.kltable .kb-table .kl-location {
+    width: 150px;
+}
+
+/* ROWS */
+
+.kb-table-header {
+    background: none repeat scroll 0 0 rgba(85, 85, 85, 0.6);
+    font-size: 10px;
+    font-weight: bold;
+    height: 15px;
+    padding: 4px;
+}
+
+.kb-table-rows > tbody > tr:nth-child(2n+1) {
+    background: none repeat scroll 0 0 rgba(10, 10, 10, 0.3);
+}
+
+.kb-table-rows > tbody > tr:nth-child(2n) {
+    background: none;
+}
+
+#content .kb-table-row-even, #content .kb-table-row-destroyed {
+	background: none;
+}
+
+.kb-table-row-even, .kb-table-row-destroyed {
+    background: url("img/black_0_60_32.png") repeat scroll 0 0 transparent;
+}
+
+.kb-table-row-odd, .kb-table-row-slot {
+    background: none repeat scroll 0 0 rgba(10, 10, 10, 0.3);
+}
+
+td.kb-table-imgcell > img {
+    margin-bottom: -2px;
+}
+
+/* HIGHLIGHTING */
+.kb-table-row-hover, .contractlist tr:hover,
+.kb-table-rows > tbody > tr:hover,
+.kb-kl-table tbody .kb-table-row-even:hover,
+.kb-kl-table .kb-table-row-odd:hover {
+    background: #4d0100; /*none repeat scroll 0 0 rgba(209, 120, 130, 0.3);*/
+	color: #E0E0E0;
+}
+
+/* AWARDBOX BARS */
+div.bar {
+    background: none repeat scroll 0 0 #A57243;
+    border-bottom: 1px solid #A57243;
+    border-right: 1px solid #A57243;
+}
+
+div.bar-background {
+    background-color: #141414;
+}
+
+/* NATIVE SUPPORT FOR CYNO/CLOAK MOD */
+td.kl-cyno-cloak-mod {
+	display: block;
+	margin-top:2px;
+	position: relative;
+}
+
+td.kl-cyno-cloak-mod.cyno, td.kl-cyno-cloak-mod.cloak {
+	width: 25px;
+}
+
+td.kl-cyno-cloak-mod.cloak.cyno {
+	width: 50px !important;
+}
+
+td.kl-cyno-cloak-mod img {
+    float: left;
+    height: 24px;
+    opacity: 0.3;
+	filter: Alpha(opacity=30);
+}
+
+td.kl-cyno-cloak-mod img.fitted {
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+}
+
+/* CORP DETAILS */
+.alliance-detail .logo, .corp-detail .logo, .pilot-detail .logo {
+	background-color: transparent;
+}
+
+/* KILL DETAIL PAGE */
+
+#kl-detail-left {
+    margin: 0 10px 10px 0;
+    width: 368px;
+}
+
+#kl-detail-right {
+    width: 430px;
+}
+
+#kl-detail-right .fitting-panel {
+	margin: auto;
+}
+
+/*
+.kl-detail-shipdetails tr.summary.bpo, .kl-detail-shipdetails tr.summary.itemdrop, .kl-detail-shipdetails tr.dropped {
+    background-color: rgba(0, 102, 0, 0.6);
+}
+*/
+.kl-detail-shipdetails tr.totalloss {
+    background-color: rgba(102, 0, 0, 0.6);
+}
+
+.comment, .comment-button {
+    background-color: rgba(41, 41, 41, 0.6);
+}
+
+/* BATTLE SUMMARY PAGE */
+.kill-related-friendly, .kill-related-hostile {
+    width: 404px;
+}
+
+.kill-related-friendly > table.kb-table,
+.kill-related-hostile > table.kb-table {
+    width: 404px;
+}
+
+.kill-related-friendly tr.kb-table-header > td:last-child,
+.kill-related-hostile tr.kb-table-header > td:last-child {
+    width: 170px;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1) {
+	background-image: none;
+    background-color: rgba(56,26,23,0.6) !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n) {
+	background-image:none;
+    background-color: rgba(83,38,35,0.6) !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1):hover,
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n):hover {
+	background-image: none;
+	background-color: rgba(100,60,57,0.6) !important;
+}
+
+.kb-table-rows tr.destroyed td.kb-table-imgcell img {
+    margin-bottom: -2px;
+}

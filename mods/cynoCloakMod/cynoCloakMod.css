@@ -1,0 +1,27 @@
+td.kb-table-imgcell > img {
+    margin-bottom: -2px;
+}
+
+.kl-cyno-cloak-mod {
+	display: block;
+	margin-top:2px;
+	position: relative;
+}
+
+.kl-cyno-cloak-mod.cyno, .kl-cyno-cloak-mod.cloak {
+	width: 24px;
+}
+
+.kl-cyno-cloak-mod.cyno.cloak {
+	width: 48px;
+}
+
+.kl-cyno-cloak-mod img {
+    float: left;
+    height: 24px;
+    opacity: 0.3;
+}
+
+.kl-location {
+	width: 114px;
+}

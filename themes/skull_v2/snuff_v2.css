@@ -1,0 +1,528 @@
+html, body {
+    background: url("img/background.png") no-repeat scroll 50% 0 #1d1d1d;
+    color: #CCCCCC;
+    font-family: "Trebuchet MS","Arial","Helvetica",sans-serif;
+	text-shadow: 1px 1px 1px black;
+}
+
+
+a:link, a:hover, a:visited, a:active {
+	color: #cccccc;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+#page-title {
+    margin-left: 120px;
+    width: 875px;
+    display: block;
+    background: black;
+    border: none;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin-top: 4px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+a:hover {
+	color: #6F635A;
+}
+
+#header {
+	display: none;
+    background: url("img/forumbann.png") no-repeat scroll 0 0 transparent;
+    height: 115px;
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+#header a {
+    display: block;
+    float: left;
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-indent: -9999px;
+    width: 230px;
+}
+
+div.infoheader {
+	display:none;
+    background: url("img/userbar.png") repeat-x scroll 0 -3px transparent;
+    color: #888888;
+    font: 11px "Trebuchet MS","Arial","Helvetica",sans-serif;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: lowercase;
+}
+.infoheader_in {
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+.navigation_in > a {
+    width: 400px;
+    margin-left: 120px;
+}
+
+.x-big-link {
+    display: block;
+    background: url(img/buttons.png) no-repeat scroll 5px 0px black;
+    margin-top: 4px;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    font-size: 24px;
+    width: 400px;
+    cursor: pointer;
+    letter-spacing: -1px;
+    height: 30px;
+}
+
+.a-killboard {
+    background-position: 5px 0px;
+}
+
+.a-killboard:hover {
+    background-position: 5px -33px;
+}
+
+.a-mainsite {
+    background-position: 5px -66px;
+}
+
+.a-mainsite:hover {
+    background-position: 5px -99px;
+}
+
+.a-forum {
+    background-position: 5px -132px;
+}
+
+.a-forum:hover {
+    background-position: 5px -165px;
+}
+
+.a-tools {
+    background-position: 5px -198px;
+}
+
+.a-tools:hover {
+    background-position: 5px -231px;
+}
+
+.x-big-link:hover {
+    color: #e8282c;
+}
+
+.x-big-link span {
+    font-size: 12px;
+    margin-left: 5px;
+    color: white !important;
+    letter-spacing: 0px;
+}
+
+.infoheader .text {
+    display: none;
+    margin: auto;
+    padding-top: 15px;
+    width: 170px;
+}
+
+div.navigation {
+	background: none;
+    /*display: none;*/
+    height: 0px;
+    margin-top: -16px;
+}
+
+div.navigation.no-kb {
+    margin-top: 0;
+}
+
+div.navigation .navigation_in {
+	margin: auto;
+	width: 1000px;
+    background: url(img/badge.png) no-repeat scroll 0 0px transparent;
+    height: 184px;
+}
+
+div.navigation ul {
+    list-style: none;
+    background: url("img/black_0_60_32.png") repeat scroll 0 0 transparent;
+    margin-left: 120px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    height: 30px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+div.navigation li {
+    float: left;
+    height: 30px;
+}
+
+div.navigation li a {
+    color: #ccc;
+	font: 13px/30px 'Roboto Condensed',sans-serif;
+	font-weight: normal;
+    line-height: 30px;
+	text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+div.navigation li a:hover {
+	color: #e8282c;
+}
+
+#skull {
+	display: block;
+	position: fixed;
+	margin-left:10px;
+	margin-top:35px;
+	width:100px;
+}
+
+#skull .image {
+	display:block;
+	opacity: 0.3;
+	float: left;
+	position: relative;
+}
+
+#skull #lefteye,
+#skull #righteye {
+	float: left;
+    height: 50px;
+    width: 50%;
+	position:absolute;
+	opacity:0;
+	top:27%;
+}
+
+#skull #lefteye {
+	background: url("img/lefteye_hover.png") no-repeat scroll 9px 0 transparent;
+}
+
+#skull #righteye {
+	background: url("img/righteye_hover.png") no-repeat scroll 8px 0 transparent;
+	right: 0;
+}
+#skull .links {
+    display: block;
+    float: left;
+    position: relative;
+    width: 150px;
+}
+
+#skull a:link, #skull a:hover, #skull a:visited, #skull a:active {
+	color: #bbbbbb;
+	font-size:14px;
+	font-weight:normal;
+}
+
+#skull a:hover {
+	color: #ffffff;
+}
+
+#skull ul {
+	display: none;
+	list-style: none;
+}
+
+#main #header {
+	display: none;
+}
+
+#main {
+    border: none;
+    margin: auto;
+    margin-top: 192px;
+    padding: 0;
+    width: 1000px;
+    border-radius: 3px;
+    background: black;
+}
+
+#footer, #footer a {
+    color: #BCBCBC;
+    font: 13px/150% "Trebuchet MS","Arial","Helvetica",sans-serif;
+}
+
+#footer {
+    background: url("img/black_0_60_32.png") repeat scroll 0 0 transparent;
+    color: #787878;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+#footer_in {
+    margin: auto;
+    position: relative;
+    width: 980px;
+}
+
+#footer_in a:link, #footer_in a:visited,
+#footer_in a:active {
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#footer_in a:hover {
+	color: white;
+}
+
+#profile {
+    color: #E0E0E0;
+    font-size: 10px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#content {
+	background: transparent;
+}
+
+.kb-mostexpensive-header {
+    background-image: url("/mods/mostexp/img/mostexp.png");
+    background-position: 0 -3px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #777777;
+    color: #CCCCCC;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+#content, .summarytable > table, .kb-kl-table {
+/* EXTEND THE TABLES TO FIT THE NEW WIDTH */
+	width: 815px;
+}
+
+#content .summarytable td.kl-kill, #content .killcount, td.kl-kill {
+	color: white;
+}
+
+#content .summarytable td.kl-loss, #content .losscount {
+	color: #e8282c;
+}
+
+.summarytable .table-container {
+	padding: 0;
+}
+
+.kb-table {
+	border: none;
+}
+
+.kltable .kb-table .kl-shiptype-text {
+    width: 160px;
+}
+
+.kltable .kb-table .kl-victim-text {
+    width: 210px;
+}
+
+.kltable .kb-table .kl-finalblow {
+    width: 150px;
+}
+
+.kltable .kb-table .kl-location {
+    width: 150px;
+}
+
+/* ROWS */
+
+.kb-table-header {
+    background: none repeat scroll 0 0 rgba(85, 85, 85, 0.6);
+    font-size: 10px;
+    font-weight: bold;
+    height: 15px;
+    padding: 4px;
+}
+
+.kb-table-rows > tbody > tr:nth-child(2n+1),
+.kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(2n+1) {
+    background: #222;
+}
+
+.kb-table-rows > tbody > tr:nth-child(2n),
+.kb-table-rows > tbody > tr.kb-table-row-kill:nth-child(2n) {
+    background: #292929;
+}
+
+.kb-table-row-even, .kb-table-row-destroyed {
+    background: #222;
+}
+
+.kb-table-row-odd, .kb-table-row-slot {
+    background: #292929;
+}
+
+td.kb-table-imgcell > img {
+    margin-bottom: -2px;
+}
+
+/* HIGHLIGHTING */
+.kb-table-row-hover, .contractlist tr:hover,
+.kb-table-rows > tbody > tr:hover,
+.kb-kl-table tbody .kb-table-row-even:hover,
+.kb-kl-table .kb-table-row-odd:hover {
+    background: rgba(222,39,42,0.8) !important;
+	color: #E0E0E0;
+}
+
+/* AWARDBOX BARS */
+div.bar {
+    background: none repeat scroll 0 0 #e8282c;
+    border-bottom: 1px solid #e8282c;
+    border-right: 1px solid #e8282c;
+}
+
+div.bar-background {
+    background-color: #141414;
+}
+
+/* NATIVE SUPPORT FOR CYNO/CLOAK MOD */
+td.kl-cyno-cloak-mod {
+	display: block;
+	margin-top:2px;
+	position: relative;
+}
+
+td.kl-cyno-cloak-mod.cyno, td.kl-cyno-cloak-mod.cloak {
+	width: 25px;
+}
+
+td.kl-cyno-cloak-mod.cloak.cyno {
+	width: 50px !important;
+}
+
+td.kl-cyno-cloak-mod img {
+    float: left;
+    height: 24px;
+    opacity: 0.3;
+	filter: Alpha(opacity=30);
+}
+
+td.kl-cyno-cloak-mod img.fitted {
+	opacity: 1 !important;
+	filter: Alpha(opacity=100) !important;
+}
+
+/* CORP DETAILS */
+.alliance-detail .logo, .corp-detail .logo, .pilot-detail .logo {
+	background-color: transparent;
+}
+
+/* KILL DETAIL PAGE */
+
+#kl-detail-left {
+    margin: 0 10px 10px 0;
+    width: 368px;
+}
+
+#kl-detail-right {
+    width: 430px;
+}
+
+#kl-detail-right .fitting-panel {
+	margin: auto;
+}
+
+/*
+.kl-detail-shipdetails tr.summary.bpo, .kl-detail-shipdetails tr.summary.itemdrop, .kl-detail-shipdetails tr.dropped {
+    background-color: rgba(0, 102, 0, 0.6);
+}
+*/
+.kl-detail-shipdetails tr.totalloss {
+    background-color: rgba(102, 0, 0, 0.6);
+}
+
+.comment, .comment-button {
+    background-color: rgba(41, 41, 41, 0.6);
+}
+
+/* BATTLE SUMMARY PAGE */
+.kill-related-friendly, .kill-related-hostile {
+    width: 404px;
+}
+
+.kill-related-friendly > table.kb-table,
+.kill-related-hostile > table.kb-table {
+    width: 404px;
+}
+
+.kill-related-friendly tr.kb-table-header > td:last-child,
+.kill-related-hostile tr.kb-table-header > td:last-child {
+    width: 170px;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1) {
+	background-image: none;
+    background-color: rgba(222,39,42,0.5) !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n) {
+	background-image:none;
+    background-color: rgba(222,39,42,0.4) !important;
+}
+
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n+1):hover,
+.kb-table-rows > tbody > tr.destroyed:nth-child(2n):hover {
+	background-image: none;
+	background-color: rgba(222,39,42,0.8) !important;
+}
+
+.kb-table-rows tr.destroyed td.kb-table-imgcell img {
+    margin-bottom: -2px;
+}
+
+/* MOD: NOTIFICATIONS */
+
+#notifications-attack {
+    margin-left: 540px;
+    position: absolute;
+    top: 32px;
+    width: 460px;
+    background: black;
+    height: 112px;
+    border-radius: 3px;
+}
+
+#notifications-attack span {
+    
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+
+#notifications-attack .inner {
+    margin: 5px;
+}
+
+#notifications-attack ul {
+    margin: 0;
+    text-transform: uppercase;
+    color: #e8282c;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+#notifications-attack li {
+    height: auto;
+    margin-bottom: 5px;
+}
